@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="contact-styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h1>Contact Details</h1>
+        <label for="first-name">First Name:</label><br />
+        <input
+          class="input-box"
+          type="text"
+          name="first-name"
+          id="first-name"
+        /><br /><br />
+        <label for="last-name">Last Name:</label><br />
+        <input
+          class="input-box"
+          type="text"
+          name="last-name"
+          id="last-name"
+        /><br /><br />
+        <label for="email-add">Email:</label><br />
+        <input
+          class="input-box"
+          type="email"
+          name="email-add"
+          id="email-add"
+          required
+        /><br /><br />
+        <label for="age">Age:</label><br />
+        <input
+          class="input-box"
+          type="number"
+          name="age"
+          id="age"
+          required
+        /><br />
+        <p>Gender</p>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" name="gender" id="other" />
+        <label for="other">Other</label><br /><br />
+        <div class="button-container">
+          <button
+            type="button"
+            onclick="alert('Thank You'); window.location.reload()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
